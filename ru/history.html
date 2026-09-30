@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Военная история Казахстана и её связь с экспозициями музея.">
+<meta name="author" content="Askarova Zeinep">
+<title>Военная история Казахстана — Военно-исторический музей</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Перейти к содержимому</a></p>
+<nav class="bg-dark py-1 small" aria-label="Язык">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/history.html" hreflang="en" lang="en">English</a>
+<a class="link-light text-decoration-underline fw-bold" href="../ru/history.html" hreflang="ru" lang="ru" aria-current="true">Русский</a>
+<a class="link-light" href="../kk/history.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Основная навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Военно-исторический музей Вооружённых Сил Республики Казахстан</span><span class="d-md-none">Военно-исторический музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">О музее</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залы</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="dropdown-item" href="atrium.html">Атриум «Мәңгілік Ел»</a></li>
+<li><a class="dropdown-item" href="ancient.html">Древность – XIX век</a></li>
+<li><a class="dropdown-item" href="20th.html">Военная история XX века</a></li>
+<li><a class="dropdown-item" href="modern.html">Вооружённые Силы Казахстана</a></li>
+<li><a class="dropdown-item" href="tank.html">История танковых войск</a></li>
+<li><a class="dropdown-item" href="weapons.html">Оружие XX–XXI веков</a></li>
+<li><a class="dropdown-item" href="formations.html">Воинские формирования и части</a></li>
+<li><a class="dropdown-item" href="arts.html">Изобразительное искусство</a></li>
+<li><a class="dropdown-item" href="temporary.html">Временные выставки</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Военная техника под открытым небом</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link active" href="history.html" aria-current="page">История</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Посещение</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Военная история Казахстана</h1>
+<p class="lead">Как историки изучают войну — и как музей превращает эти исследования в предметы, перед которыми можно постоять.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/steppe-firefight-diorama.jpg"><img class="img-fluid rounded" src="../images/steppe-firefight-diorama.jpg" alt="Диорама: защитники в национальной одежде стреляют из длинноствольных ружей со скалистого склона" width="720" height="478"></a>
+<figcaption class="figure-caption">Диорама: защитники стреляют из длинноствольных ружей со скалистого склона.</figcaption>
+</figure>
+<p>Перейти: <a href="#milestones">вехи</a> или <a href="#museum-role">военная история как предмет музея</a>.</p>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Что такое военная история?</h2>
+<p>В научной литературе военная история определяется как изучение войн, военного искусства, вооружённых сил, военной техники и военной мысли. Эти области взаимосвязаны, когда исследователи реконструируют и осмысляют военный опыт.</p>
+<h2 class="h3 mt-4 mb-3">Военная история в Казахстане</h2>
+<p>Исследование развития военной истории в Казахстане прослеживает её истоки через исторические источники и военный опыт. В нём описан рост военно-исторического образования после создания Вооружённых Сил Республики Казахстан в 1992 году.</p>
+<p>Та же работа отмечает становление профессиональных военных историков и создание учреждений военно-исторического образования и исследований в независимом Казахстане.</p>
+<h2 id="museum-role" class="h3 mt-4 mb-3">Военная история как предмет музея</h2>
+<p class="clearfix"><a href="../images/wwii-diorama.jpg"><img class="float-md-end ms-md-3 mb-2 img-fluid rounded" src="../images/thumbs/wwii-diorama.jpg" alt="Диорама сражения Второй мировой войны: солдаты поднимают красное знамя рядом с разрушенным стеклянным куполом и зенитными орудиями" width="320" height="210"></a>Музей может представлять военную историю через предметы: оружие, форму, документы, искусство, технику и личные истории. Это делает историческое исследование доступным для посетителей и сохраняет материальные свидетельства.</p>
+<blockquote class="blockquote">
+<p lang="kk">Өмір мен өлім арасындағы заттар</p>
+<p>&mdash; <cite>подпись к витрине в зале XX века, Военно-исторический музей, Астана</cite></p>
+</blockquote>
+<!-- Why: hr marks a change of topic between the essay and the timeline, which a heading alone would not show -->
+<hr>
+</section>
+<section id="milestones" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Вехи, упомянутые в источниках</h2>
+<p>Четыре даты, обрамляющие историю музея.</p>
+<ol type="I">
+<li><strong>1941&ndash;1942:</strong> формирование частей в Казахстане. Исследование 2024&nbsp;года фиксирует более 50 частей и соединений, среди них:
+<ul>
+<li>стрелковые дивизии;</li>
+<li>национальные кавалерийские дивизии.</li>
+</ul>
+</li>
+<li><strong>1992:</strong> создаются <abbr title="Вооружённые Силы Республики Казахстан">ВС РК</abbr>. В последующие годы развиваются военно-историческое образование и исследования.</li>
+<li><strong>1998:</strong> строится здание музейного комплекса. E-Museum датирует архитектурный комплекс 1998 годом.</li>
+<li><strong>2015:</strong> музей открывается в нынешнем виде. Visit Astana называет 2015 год годом открытия<sup><a href="#note-1">1</a></sup>.</li>
+</ol>
+<p id="note-1"><small><sup>1</sup> Здание построено раньше: <abbr title="Электронный музей">e-Museum</abbr> относит комплекс к 1998 году.</small></p>
+</section>
+<!-- id: this section is one unique block and the target of my specificity experiment, so an id fits better than a class -->
+<section id="more-halls" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Продолжить знакомство</h2>
+<!-- Bootstrap component: Cards — used to present museum halls; I took the photo, title, text and link from my old article and turned the link into a button -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="ancient.html"><img class="card-img-top" src="../images/thumbs/armoured-warrior-spear.jpg" alt="Фигура воина в пластинчатых доспехах с длинным копьём, круглый щит с золотым крылатым существом и луки" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">2. Древность – XIX век</h3>
+<p class="card-text px-3 mt-2">Доспехи, луки, шлемы и погребение коня из военного мира степи.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="ancient.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="20th.html"><img class="card-img-top" src="../images/thumbs/stalingrad-case.jpg" alt="Экспозиция «Сталинград»: фотографии, карта, каски и полевое снаряжение за стеклом" width="320" height="208" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">3. Военная история XX века</h3>
+<p class="card-text px-3 mt-2">Алашский период, Великая Отечественная война и война в Афганистане.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="20th.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="modern.html"><img class="card-img-top" src="../images/thumbs/officer-office-b.jpg" alt="Общий вид реконструированного кабинета: деревянный стол, зелёные стулья, синие шторы и флаг Казахстана" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">4. Вооружённые Силы Казахстана</h3>
+<p class="card-text px-3 mt-2">От создания вооружённых сил в 1992 году до современных сухопутных, противовоздушных и военно-морских сил.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="modern.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="formations.html"><img class="card-img-top" src="../images/thumbs/wwii-heroes-case.jpg" alt="Витрина Второй мировой войны: ряды портретов солдат, винтовки, каска и документы" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">7. Воинские формирования и части</h3>
+<p class="card-text px-3 mt-2">Как формировались дивизии и бригады в Казахстане и как изучается их история.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="formations.html">Открыть страницу</a></p>
+</article>
+</div>
+</div>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Военно-исторический музей</h2>
+<address>
+Вооружённые Силы Республики Казахстан<br>
+Район площади Республики, Астана, Казахстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Разделы</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Главная</a></li>
+<li><a class="link-light" href="about.html">О музее</a></li>
+<li><a class="link-light" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Военная история</a></li>
+<li><a class="link-light" href="visit.html">Планирование визита</a></li>
+<li><a class="link-light" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Важно знать</h2>
+<p class="small">Часы работы и цены на билеты в разных источниках различаются. Пожалуйста, уточните их в музее перед поездкой.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Независимый учебный сайт — не официальный сайт музея.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

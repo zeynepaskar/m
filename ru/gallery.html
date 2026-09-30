@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Фотографии залов и открытой экспозиции Военно-исторического музея в Астане.">
+<meta name="author" content="Askarova Zeinep">
+<title>Галерея — Военно-исторический музей</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Перейти к содержимому</a></p>
+<nav class="bg-dark py-1 small" aria-label="Язык">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/gallery.html" hreflang="en" lang="en">English</a>
+<a class="link-light text-decoration-underline fw-bold" href="../ru/gallery.html" hreflang="ru" lang="ru" aria-current="true">Русский</a>
+<a class="link-light" href="../kk/gallery.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Основная навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Военно-исторический музей Вооружённых Сил Республики Казахстан</span><span class="d-md-none">Военно-исторический музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">О музее</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залы</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="dropdown-item" href="atrium.html">Атриум «Мәңгілік Ел»</a></li>
+<li><a class="dropdown-item" href="ancient.html">Древность – XIX век</a></li>
+<li><a class="dropdown-item" href="20th.html">Военная история XX века</a></li>
+<li><a class="dropdown-item" href="modern.html">Вооружённые Силы Казахстана</a></li>
+<li><a class="dropdown-item" href="tank.html">История танковых войск</a></li>
+<li><a class="dropdown-item" href="weapons.html">Оружие XX–XXI веков</a></li>
+<li><a class="dropdown-item" href="formations.html">Воинские формирования и части</a></li>
+<li><a class="dropdown-item" href="arts.html">Изобразительное искусство</a></li>
+<li><a class="dropdown-item" href="temporary.html">Временные выставки</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Военная техника под открытым небом</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">История</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Посещение</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Галерея</h1>
+<p>Тридцать два фотоснимка из залов и с территории музея, сгруппированные по темам. Нажмите на любое фото, чтобы открыть его в полном размере.</p>
+<nav aria-label="Темы галереи">
+<ul>
+<li><a href="#building">Здание (4)</a></li>
+<li><a href="#antiquity">Древность (7)</a></li>
+<li><a href="#xx">XX век (7)</a></li>
+<li><a href="#modern">Современные силы (7)</a></li>
+<li><a href="#tanks">Танки и оружие (4)</a></li>
+<li><a href="#outdoors">Под открытым небом (3)</a></li>
+</ul>
+</nav>
+<section id="building" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Здание</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/facade-horsemen.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/facade-horsemen.jpg" alt="Фасад музея со стороны площади: лестница и бронзовые всадники по обе стороны от входа" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Фасад музея со стороны площади, бронзовые всадники у лестницы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/entrance-banner.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/entrance-banner.jpg" alt="Синий баннер над входом в музей с надписями «Әскери-тарихи музей» и «Военно-исторический музей»" width="480" height="313" loading="lazy"></a>
+<figcaption class="figure-caption">Двуязычный баннер над входом: казахское и русское названия музея.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/model-building.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/model-building.jpg" alt="Макет музея с синим куполом, газонами и крошечными танками и самолётами" width="480" height="342" loading="lazy"></a>
+<figcaption class="figure-caption">Макет музейного комплекса и прилегающей территории.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/atrium-mangilik-el.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/atrium-mangilik-el.jpg" alt="Атриум с бронзовым монументом «Мәңгілік Ел»: пять воинов вокруг карты в резной каменной раме, по бокам фигуры воинов" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Атриум: бронзовый монумент «Мәңгілік Ел» с фигурами воинов по бокам.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="antiquity" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Древность</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warriors-red-column.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warriors-red-column.jpg" alt="Галерея с фигурами воинов в доспехах, одна из них на фоне ярко-красной колонны с полосатым знаменем" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Фигуры в доспехах в галерее древней истории; одна — на фоне ярко-красной колонны.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warrior-spear.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warrior-spear.jpg" alt="Фигура воина в пластинчатых доспехах с длинным копьём, круглый щит с золотым крылатым существом и луки" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Пластинчатые доспехи, копьё, луки и щит с золотым крылатым существом.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/warrior-shield-steppe.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/warrior-shield-steppe.jpg" alt="Фигура воина в цветных доспехах с расписным круглым щитом на фоне степного сражения" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">Воин с расписным круглым щитом на фоне степного сражения.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/helmet-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/helmet-case.jpg" alt="Одинокий шлем на белом постаменте в стеклянной витрине, позади другие экспонаты" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Одиночный шлем на отдельном постаменте в галерее древней истории.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/horse-burial.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/horse-burial.jpg" alt="Скелет коня в реконструированной погребальной яме за стеклом" width="480" height="312" loading="lazy"></a>
+<figcaption class="figure-caption">Скелет коня в реконструированной погребальной яме.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/steppe-firefight-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/steppe-firefight-diorama.jpg" alt="Диорама: защитники в национальной одежде стреляют из длинноствольных ружей со скалистого склона" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">Диорама: защитники стреляют из длинноствольных ружей со скалистого склона.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/firearms-18-19c.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/firearms-18-19c.jpg" alt="Длинноствольное огнестрельное оружие и пороховницы в витрине с розовой подсветкой под казахским заголовком" width="480" height="321" loading="lazy"></a>
+<figcaption class="figure-caption">Огнестрельное оружие в витрине с розовой подсветкой; казахский заголовок относится к иностранному оружию XVIII–XIX веков.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="xx" class="mb-5">
+<h2 class="h3 mt-4 mb-3">XX век</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/early-20th-rifle.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/early-20th-rifle.jpg" alt="Магазинная винтовка, револьвер и штык на белых подставках" width="480" height="324" loading="lazy"></a>
+<figcaption class="figure-caption">Винтовка, револьвер и штык начала XX века.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-heroes-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-heroes-case.jpg" alt="Витрина Второй мировой войны: ряды портретов солдат, винтовки, каска и документы" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Портреты, винтовки, каска и документы в витрине Второй мировой войны.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-diorama.jpg" alt="Диорама сражения Второй мировой войны: солдаты поднимают красное знамя рядом с разрушенным стеклянным куполом и зенитными орудиями" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Диорама сражения Второй мировой войны: солдаты поднимают красное знамя у разрушенного стеклянного купола.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/stalingrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/stalingrad-case.jpg" alt="Экспозиция «Сталинград»: фотографии, карта, каски и полевое снаряжение за стеклом" width="480" height="311" loading="lazy"></a>
+<figcaption class="figure-caption">Экспозиция «Сталинград»: фотографии, карты, каски и личные вещи.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/leningrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/leningrad-case.jpg" alt="Экспозиция «Ленинград»: карты, фотографии, оружие и афиша концерта с Седьмой симфонией Шостаковича" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Экспозиция «Ленинград», включая афишу концерта Шостаковича.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/objects-life-death-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/objects-life-death-case.jpg" alt="Витрина со старым снаряжением и архивными фотографиями под казахским заголовком «Өмір мен өлім арасындағы заттар»" width="480" height="358" loading="lazy"></a>
+<figcaption class="figure-caption">Витрина с заголовком «Өмір мен өлім арасындағы заттар» — «Предметы между жизнью и смертью».</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/portrait-greatcoat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/portrait-greatcoat.jpg" alt="Картина маслом в раме: солдат в шинели и сапогах на снежном фоне" width="480" height="476" loading="lazy"></a>
+<figcaption class="figure-caption">Картина в раме: солдат в шинели.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="modern" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Современные силы</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-b.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-b.jpg" alt="Общий вид реконструированного кабинета: деревянный стол, зелёные стулья, синие шторы и флаг Казахстана" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Тот же кабинет с другой стороны: деревянный стол, зелёные стулья и синие шторы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-a.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-a.jpg" alt="Реконструированный кабинет офицера: фигура в форме за деревянным столом, позади государственный флаг и герб" width="480" height="303" loading="lazy"></a>
+<figcaption class="figure-caption">Реконструированный кабинет офицера с государственным флагом и гербом.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/un-flag-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/un-flag-case.jpg" alt="Флаг ООН рядом с настенной витриной с фотографиями, документами и знаками различия" width="480" height="422" loading="lazy"></a>
+<figcaption class="figure-caption">Флаг ООН рядом с витриной с фотографиями и знаками различия.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/parade-car.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/parade-car.jpg" alt="Открытый парадный автомобиль перед экранами с чёрно-белыми кадрами военных парадов" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Открытый парадный автомобиль перед экранами с архивными кадрами.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/patrol-ship-model.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/patrol-ship-model.jpg" alt="Подробная модель серого патрульного корабля в стеклянной витрине, на стене позади — фотографии кораблей" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Подробная модель патрульного корабля в морской экспозиции.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/ship-console.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/ship-console.jpg" alt="Серый пульт управления со шкалами, переключателями и штурвалом" width="480" height="320" loading="lazy"></a>
+<figcaption class="figure-caption">Пульт со штурвалом и приборами рядом с моделями кораблей.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/cockpit-ejection-seat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/cockpit-ejection-seat.jpg" alt="Кабина истребителя с отметкой 001, фигура лётчика в лётном костюме и другая — на катапультном кресле" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Кабина с отметкой «001», фигуры лётчиков и катапультное кресло.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="tanks" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Танки и оружие</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/relief-map-tanks.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/relief-map-tanks.jpg" alt="Большая рельефная карта за красным канатом: модели танков среди нарисованных линий боя и дат" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Рельефная карта на уровне пола с моделями танков, обнесённая красным канатом.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/tank-cutaway.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/tank-cutaway.jpg" alt="Настенная экспозиция: танк в разрезе, внутри корпуса видны фигуры экипажа" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Танк в разрезе на стене показывает, где сидит экипаж.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/machine-guns-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/machine-guns-case.jpg" alt="Стеклянная витрина с пулемётами, автоматами, длинным противотанковым ружьём и снарядом рядом с фотографиями солдат" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Пулемёты, автоматы и противотанковое ружьё в одной витрине.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/field-gun.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/field-gun.jpg" alt="Чёрное полевое орудие на спицованных колёсах на мраморном полу" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Полевое орудие на спицованных колёсах на мраморном полу.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="outdoors" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Под открытым небом</h2>
+<!-- responsive grid: 3 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/sam-launcher.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/sam-launcher.jpg" alt="Зенитная ракетная установка с четырьмя ракетами, направленными в облачное небо" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Зенитная ракетная установка на открытой площадке.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/coast-guard-boat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/coast-guard-boat.jpg" alt="Бирюзово-белый катер береговой охраны № 607 на стальных опорах с надписью «Jagalay Küzeti»" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Катер береговой охраны № 607 с надписью «Jagalay Küzeti» на стальных опорах.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-vehicles.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-vehicles.jpg" alt="Бронетехника и танки, выстроенные на мощёной площади, позади городские здания" width="480" height="258" loading="lazy"></a>
+<figcaption class="figure-caption">Бронетехника на мощёной площади.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Военно-исторический музей</h2>
+<address>
+Вооружённые Силы Республики Казахстан<br>
+Район площади Республики, Астана, Казахстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Разделы</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Главная</a></li>
+<li><a class="link-light" href="about.html">О музее</a></li>
+<li><a class="link-light" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Военная история</a></li>
+<li><a class="link-light" href="visit.html">Планирование визита</a></li>
+<li><a class="link-light" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Важно знать</h2>
+<p class="small">Часы работы и цены на билеты в разных источниках различаются. Пожалуйста, уточните их в музее перед поездкой.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Независимый учебный сайт — не официальный сайт музея.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

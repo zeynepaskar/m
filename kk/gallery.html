@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Астанадағы Әскери-тарихи музей залдары мен ашық экспозициясының фотосуреттері.">
+<meta name="author" content="Askarova Zeinep">
+<title>Галерея — Әскери-тарихи музей</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Мазмұнға өту</a></p>
+<nav class="bg-dark py-1 small" aria-label="Тіл">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/gallery.html" hreflang="en" lang="en">English</a>
+<a class="link-light" href="../ru/gallery.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light text-decoration-underline fw-bold" href="../kk/gallery.html" hreflang="kk" lang="kk" aria-current="true">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Негізгі навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі</span><span class="d-md-none">Әскери-тарихи музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Мәзірді ашу"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Басты бет</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">Музей туралы</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залдар</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Залдар мен экспозициялар</a></li>
+<li><a class="dropdown-item" href="atrium.html">«Мәңгілік Ел» атриумы</a></li>
+<li><a class="dropdown-item" href="ancient.html">Көне заман – XIX ғасыр</a></li>
+<li><a class="dropdown-item" href="20th.html">XX ғасырдың әскери тарихы</a></li>
+<li><a class="dropdown-item" href="modern.html">Қазақстан Қарулы Күштері</a></li>
+<li><a class="dropdown-item" href="tank.html">Танк әскерлерінің тарихы</a></li>
+<li><a class="dropdown-item" href="weapons.html">XX–XXI ғасырлардың қару-жарағы</a></li>
+<li><a class="dropdown-item" href="formations.html">Әскери құрамалар мен бөлімдер</a></li>
+<li><a class="dropdown-item" href="arts.html">Бейнелеу өнері</a></li>
+<li><a class="dropdown-item" href="temporary.html">Уақытша көрмелер</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Ашық аспан астындағы әскери техника</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">Тарих</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Келу</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Жоба</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Галерея</h1>
+<p>Залдар мен музей аумағынан отыз екі фотосурет, тақырыптар бойынша топтастырылған. Толық өлшемде ашу үшін кез келген фотоны басыңыз.</p>
+<nav aria-label="Галерея тақырыптары">
+<ul>
+<li><a href="#building">Ғимарат (4)</a></li>
+<li><a href="#antiquity">Көне заман (7)</a></li>
+<li><a href="#xx">XX ғасыр (7)</a></li>
+<li><a href="#modern">Қазіргі күштер (7)</a></li>
+<li><a href="#tanks">Танктер мен қару-жарақ (4)</a></li>
+<li><a href="#outdoors">Ашық аспан астында (3)</a></li>
+</ul>
+</nav>
+<section id="building" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Ғимарат</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/facade-horsemen.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/facade-horsemen.jpg" alt="Алаңнан көрінетін музей қасбеті: баспалдақ және кіреберістің екі жағындағы қола шабандоздар" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Алаңнан көрінетін музей қасбеті, баспалдақ жанындағы қола шабандоздар.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/entrance-banner.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/entrance-banner.jpg" alt="Музей кіреберісінің үстіндегі көк баннер: «Әскери-тарихи музей» және «Военно-исторический музей»" width="480" height="313" loading="lazy"></a>
+<figcaption class="figure-caption">Кіреберіс үстіндегі қостілді баннер: музейдің қазақша және орысша атауы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/model-building.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/model-building.jpg" alt="Көк күмбезді музей макеті: айналасында көгал, кішкентай танктер мен ұшақтар" width="480" height="342" loading="lazy"></a>
+<figcaption class="figure-caption">Музей кешені мен оның аумағының макеті.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/atrium-mangilik-el.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/atrium-mangilik-el.jpg" alt="«Мәңгілік Ел» қола ескерткіші бар атриум: оюлы тас жақтаудағы карта басындағы бес жауынгер, екі жағында жауынгер мүсіндері" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Атриум: екі жағында жауынгер мүсіндері бар «Мәңгілік Ел» қола ескерткіші.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="antiquity" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Көне заман</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warriors-red-column.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warriors-red-column.jpg" alt="Сауыт киген жауынгер мүсіндері бар галерея, біреуі жолақты туы бар қызыл бағананың алдында" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Көне тарих галереясындағы сауытты мүсіндер; біреуі қызыл бағананың алдында.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warrior-spear.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warrior-spear.jpg" alt="Қабыршақ сауыт киген, ұзын найзалы жауынгер мүсіні, алтын қанатты жаратылысы бар дөңгелек қалқан және садақтар" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Қабыршақ сауыт, найза, садақтар және алтын қанатты жаратылыспен әшекейленген қалқан.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/warrior-shield-steppe.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/warrior-shield-steppe.jpg" alt="Түрлі-түсті сауыт киген, кескінделген дөңгелек қалқаны бар жауынгер мүсіні, артында дала шайқасының фоны" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">Дала шайқасы фонындағы кескінделген дөңгелек қалқанды жауынгер.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/helmet-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/helmet-case.jpg" alt="Шыны витринадағы ақ тұғырдағы жалғыз дулыға, артында басқа экспонаттар" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Көне тарих галереясындағы жеке тұғырда тұрған дулыға.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/horse-burial.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/horse-burial.jpg" alt="Шыны артындағы қайта жасалған жерлеу шұңқырындағы ат қаңқасы" width="480" height="312" loading="lazy"></a>
+<figcaption class="figure-caption">Қайта жасалған жерлеу шұңқырына жатқызылған ат қаңқасы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/steppe-firefight-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/steppe-firefight-diorama.jpg" alt="Диорама: ұлттық киімдегі қорғаушылар жартасты беткейден ұзын ұңғылы мылтықпен ататын көрініс" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">Диорама: жартасты беткейден ұзын ұңғылы мылтықпен ататын қорғаушылар.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/firearms-18-19c.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/firearms-18-19c.jpg" alt="Қызғылт жарықтандырылған витринадағы ұзын ұңғылы атыс қаруы мен дәрі салғыштар, үстінде қазақша тақырып" width="480" height="321" loading="lazy"></a>
+<figcaption class="figure-caption">Қызғылт жарықтандырылған витринадағы атыс қаруы; қазақша тақырып XVIII–XIX ғасырлардағы шетелдік қаруға қатысты.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="xx" class="mb-5">
+<h2 class="h3 mt-4 mb-3">XX ғасыр</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/early-20th-rifle.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/early-20th-rifle.jpg" alt="Ақ тұғырлардағы винтовка, револьвер және найза-пышақ" width="480" height="324" loading="lazy"></a>
+<figcaption class="figure-caption">XX ғасыр басындағы винтовка, револьвер және найза-пышақ.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-heroes-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-heroes-case.jpg" alt="Екінші дүниежүзілік соғыс витринасы: сарбаздар портреттерінің қатарлары, винтовкалар, дулыға және құжаттар" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Екінші дүниежүзілік соғыс витринасындағы портреттер, винтовкалар, дулыға және құжаттар.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-diorama.jpg" alt="Екінші дүниежүзілік соғыс шайқасының диорамасы: сарбаздар қираған шыны күмбез бен зениттік зеңбіректердің жанында қызыл жалауды көтеруде" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Екінші дүниежүзілік соғыс шайқасының диорамасы: сарбаздар қираған шыны күмбездің жанында қызыл жалауды көтеруде.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/stalingrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/stalingrad-case.jpg" alt="«Сталинград» экспозициясы: шыны артындағы фотосуреттер, карта, дулығалар және дала жабдығы" width="480" height="311" loading="lazy"></a>
+<figcaption class="figure-caption">«Сталинград» экспозициясы: фотосуреттер, карталар, дулығалар және жеке заттар.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/leningrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/leningrad-case.jpg" alt="«Ленинград» экспозициясы: карталар, фотосуреттер, қару және Шостаковичтің Жетінші симфониясы концертінің афишасы" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Шостакович концертінің афишасы бар «Ленинград» экспозициясы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/objects-life-death-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/objects-life-death-case.jpg" alt="«Өмір мен өлім арасындағы заттар» деген тақырыпшасы бар витрина: ескі жабдық және мұрағат фотосуреттері" width="480" height="358" loading="lazy"></a>
+<figcaption class="figure-caption">«Өмір мен өлім арасындағы заттар» тақырыбындағы витрина.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/portrait-greatcoat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/portrait-greatcoat.jpg" alt="Жақтаудағы майлы бояумен салынған сурет: қарлы фондағы шинель мен етік киген сарбаз" width="480" height="476" loading="lazy"></a>
+<figcaption class="figure-caption">Жақтаудағы сурет: шинель киген сарбаз.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="modern" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Қазіргі күштер</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-b.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-b.jpg" alt="Қайта жасалған кабинеттің жалпы көрінісі: ағаш үстел, жасыл орындықтар, көк перделер және Қазақстан туы" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">Сол кабинет екінші жағынан: ағаш үстел, жасыл орындықтар және көк перделер.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-a.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-a.jpg" alt="Қайта жасалған офицер кабинеті: ағаш үстел басындағы форма киген мүсін, артында мемлекеттік ту мен елтаңба" width="480" height="303" loading="lazy"></a>
+<figcaption class="figure-caption">Мемлекеттік ту мен елтаңбасы бар қайта жасалған офицер кабинеті.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/un-flag-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/un-flag-case.jpg" alt="БҰҰ туы және қабырғадағы витрина: фотосуреттер, құжаттар мен айырым белгілері" width="480" height="422" loading="lazy"></a>
+<figcaption class="figure-caption">БҰҰ туы және фотосуреттер мен айырым белгілері көрсетілген витрина.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/parade-car.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/parade-car.jpg" alt="Әскери шерулердің ақ-қара кадрлары көрсетілген экрандардың алдындағы ашық шеру автомобилі" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Мұрағаттық кадрлар көрсетілген экрандардың алдындағы ашық шеру автомобилі.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/patrol-ship-model.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/patrol-ship-model.jpg" alt="Шыны витринадағы сұр патрульдік кеменің егжей-тегжейлі макеті, артқы қабырғада кемелердің фотосуреттері" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Теңіз экспозициясындағы патрульдік кеменің егжей-тегжейлі макеті.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/ship-console.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/ship-console.jpg" alt="Сұр басқару пульті: шкалалар, ажыратқыштар және руль" width="480" height="320" loading="lazy"></a>
+<figcaption class="figure-caption">Кеме макеттерінің жанындағы рулі мен аспаптары бар пульт.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/cockpit-ejection-seat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/cockpit-ejection-seat.jpg" alt="001 деп белгіленген истребитель кабинасы: ұшқыш костюмді мүсін және катапульта орындығындағы мүсін" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">«001» деп белгіленген кабина, ұшқыштар мүсіндері және катапульта орындығы.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="tanks" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Танктер мен қару-жарақ</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/relief-map-tanks.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/relief-map-tanks.jpg" alt="Қызыл арқанмен қоршалған үлкен рельефті карта: шайқас сызықтары мен күндері арасындағы танк макеттері" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Қызыл арқанмен қоршалған, танк макеттері бар еден деңгейіндегі рельефті карта.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/tank-cutaway.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/tank-cutaway.jpg" alt="Қабырғадағы қиылысты танк: корпус ішінде экипаж мүсіндері көрінеді" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Қабырғадағы қиылысты танк экипаж қайда отыратынын көрсетеді.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/machine-guns-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/machine-guns-case.jpg" alt="Пулеметтер, автоматтар, ұзын танкіге қарсы мылтық және снаряд қойылған шыны витрина, жанында сарбаздар фотосуреттері" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Бір витринадағы пулеметтер, автоматтар және танкіге қарсы мылтық.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/field-gun.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/field-gun.jpg" alt="Мәрмәр еденде тұрған дөңгелектері бар қара дала зеңбірегі" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Мәрмәр еденде көрсетілген дала зеңбірегі.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="outdoors" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Ашық аспан астында</h2>
+<!-- responsive grid: 3 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/sam-launcher.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/sam-launcher.jpg" alt="Бұлтты аспанға бағытталған төрт зымыраны бар зениттік зымыран қондырғысы" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Ашық алаңдағы зениттік зымыран қондырғысы.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/coast-guard-boat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/coast-guard-boat.jpg" alt="Болат тіректердегі «Jagalay Küzeti» жазуы бар көгілдір-ақ 607 нөмірлі жағалау күзеті катері" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Болат тіректердегі «Jagalay Küzeti» жазуы бар 607 катері.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-vehicles.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-vehicles.jpg" alt="Тас төселген алаңға тізілген сауытты техника мен танктер, артында қала ғимараттары" width="480" height="258" loading="lazy"></a>
+<figcaption class="figure-caption">Тас төселген алаңға тізілген сауытты техника.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Әскери-тарихи музей</h2>
+<address>
+Қазақстан Республикасының Қарулы Күштері<br>
+Республика алаңы маңы, Астана, Қазақстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a> / <a class="link-light" href="tel:+77172919036">91-90-36</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Бөлімдер</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Басты бет</a></li>
+<li><a class="link-light" href="about.html">Музей туралы</a></li>
+<li><a class="link-light" href="exhibits.html">Залдар мен экспозициялар</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Әскери тарих</a></li>
+<li><a class="link-light" href="visit.html">Сапарды жоспарлау</a></li>
+<li><a class="link-light" href="colophon.html">Жоба туралы</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Білгеніңіз жөн</h2>
+<p class="small">Жұмыс уақыты мен билет бағасы әртүрлі көздерде әртүрлі. Сапарға шығар алдында оларды музейден нақтылаңыз.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Тәуелсіз оқу сайты — музейдің ресми сайты емес.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

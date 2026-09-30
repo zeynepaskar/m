@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Visitor information and planning page for the Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan.">
+<meta name="author" content="Askarova Zeinep">
+<title>Plan a Visit — Military-Historical Museum</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Skip to content</a></p>
+<nav class="bg-dark py-1 small" aria-label="Language">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light text-decoration-underline fw-bold" href="../en/visit.html" hreflang="en" lang="en" aria-current="true">English</a>
+<a class="link-light" href="../ru/visit.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light" href="../kk/visit.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Main navigation">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</span><span class="d-md-none">Military-Historical Museum</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halls</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="dropdown-item" href="atrium.html">Atrium “Mangilik El”</a></li>
+<li><a class="dropdown-item" href="ancient.html">Antiquity – XIX Century</a></li>
+<li><a class="dropdown-item" href="20th.html">Military History of the XX Century</a></li>
+<li><a class="dropdown-item" href="modern.html">Armed Forces of Kazakhstan</a></li>
+<li><a class="dropdown-item" href="tank.html">History of Tank Troops</a></li>
+<li><a class="dropdown-item" href="weapons.html">Weapons of the XX–XXI Centuries</a></li>
+<li><a class="dropdown-item" href="formations.html">Military Formations and Units</a></li>
+<li><a class="dropdown-item" href="arts.html">Visual Arts</a></li>
+<li><a class="dropdown-item" href="temporary.html">Temporary Exhibitions</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Outdoor Military Equipment</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+<li class="nav-item"><a class="nav-link active" href="visit.html" aria-current="page">Plan a Visit</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Project</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Plan a Visit</h1>
+<p>Where to find the museum, when it is open, what it costs — and what to check before you set off.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/facade-horsemen.jpg"><img class="img-fluid rounded" src="../images/facade-horsemen.jpg" alt="Museum façade seen from the plaza, with steps and bronze horsemen on either side of the entrance" width="720" height="472"></a>
+<figcaption class="figure-caption">The museum façade from the plaza, with bronze horsemen beside the steps.</figcaption>
+</figure>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Visitor information</h2>
+<dl>
+<dt>Address</dt>
+<dd>Republic Square area, Astana. One tourism listing gives “Republic Square, 2”.</dd>
+<dt>Hours</dt>
+<dd>Sources differ — see the table below, then confirm by phone.</dd>
+<dt>Admission</dt>
+<dd>Sources differ: free in May 2025 (Orda.kz) vs. 500 ₸ (e-Museum).</dd>
+<dt>Phone</dt>
+<dd><a href="tel:+77172919035">+7 (7172) 91-90-35</a>, <a href="tel:+77172919036">+7 (7172) 91-90-36</a> (according to e-Museum)</dd>
+</dl>
+<!-- Bootstrap component: Table — striped and bordered; table-responsive lets it scroll inside its own box on a phone instead of widening the page -->
+<div class="table-responsive">
+<table class="table table-striped table-bordered align-middle">
+<caption>Practical information</caption>
+<thead class="table-dark">
+<tr>
+<th scope="col">Topic</th>
+<th scope="col">Details</th>
+<th scope="col">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">City</th>
+<td>Astana, Kazakhstan</td>
+<td>All sources</td>
+</tr>
+<tr>
+<th scope="row">Address</th>
+<td>Republic Avenue / Republic Square area</td>
+<td>Visit Astana; tourism listings</td>
+</tr>
+<tr>
+<th scope="row">Hours</th>
+<td>09:00–18:00</td>
+<td>e-Museum</td>
+</tr>
+<tr>
+<th scope="row">Hours</th>
+<td>Tuesday–Sunday 10:00–17:00; Monday is a day off</td>
+<td>Visit Astana</td>
+</tr>
+<tr>
+<th scope="row">Admission</th>
+<td>Ticket price 500 ₸</td>
+<td>e-Museum</td>
+</tr>
+<tr>
+<th scope="row">Phone</th>
+<td>+7 (7172) 91-90-35</td>
+<td>e-Museum</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><mark>Check current information before visiting,</mark> because public listings are updated at different times.</p>
+<p><a href="https://2gis.kz/astana/firm/70000001022229717" target="_blank" rel="noopener noreferrer">Find it on the 2GIS map</a></p>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Tips for your visit</h2>
+<ol>
+<li>Start at the atrium and follow the halls in order — the exhibition is chronological.</li>
+<li>Look for the temporary-exhibitions hall: its programme changes.</li>
+<li>Leave the outdoor pavilion for the end and, if you can, for good weather.</li>
+<li>Phone ahead to confirm opening hours and the current ticket price.</li>
+</ol>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/armoured-vehicles.jpg"><img class="img-fluid rounded" src="../images/armoured-vehicles.jpg" alt="Armoured vehicles and tanks lined up on a paved plaza, with city buildings behind" width="640" height="344" loading="lazy"></a>
+<figcaption class="figure-caption">Armoured vehicles lined up on the paved plaza.</figcaption>
+</figure>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Visitor request form</h2>
+<p>Tell us when you would like to come and what interests you most.</p>
+<form class="row g-4" method="post" action="#">
+<fieldset class="col-12 col-md-6 border rounded p-3">
+<legend class="float-none w-auto px-2 fs-5">Your details</legend>
+<p>
+<label class="form-label mb-1" for="name">Full name</label>
+<input class="form-control" type="text" id="name" name="name" placeholder="e.g. Aigerim Nurlanova" required>
+</p>
+<p>
+<label class="form-label mb-1" for="email">Email</label>
+<input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" required>
+</p>
+<p>
+<label class="form-label mb-1" for="phone">Phone</label>
+<input class="form-control" type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00">
+</p>
+</fieldset>
+<fieldset class="col-12 col-md-6 border rounded p-3">
+<legend class="float-none w-auto px-2 fs-5">Your visit</legend>
+<p>
+<label class="form-label mb-1" for="date">Preferred date</label>
+<input class="form-control" type="date" id="date" name="date" required>
+</p>
+<p>
+<label class="form-label mb-1" for="visitors">Number of visitors</label>
+<input class="form-control" type="number" id="visitors" name="visitors" min="1" max="20" value="1" required>
+</p>
+<p>
+<label class="form-label mb-1" for="interest">Main interest</label>
+<select class="form-select" id="interest" name="interest">
+<option value="all">Everything — the full route</option>
+<option value="ancient">Antiquity and the steppe</option>
+<option value="xx">The twentieth century</option>
+<option value="modern">Armed Forces of Kazakhstan</option>
+<option value="tanks">Tanks and weapons</option>
+<option value="outdoor">Outdoor equipment</option>
+</select>
+</p>
+<fieldset class="mb-3">
+<legend class="float-none w-auto fs-6">Visit type</legend>
+<p>
+<input class="form-check-input me-2" type="radio" id="individual" name="visit-type" value="individual" required>
+<label class="form-check-label me-3" for="individual">Individual</label>
+<input class="form-check-input me-2" type="radio" id="group" name="visit-type" value="group">
+<label class="form-check-label me-3" for="group">Group</label>
+</p>
+</fieldset>
+<p>
+<label class="form-label mb-1" for="message">Message</label>
+<textarea class="form-control" id="message" name="message" rows="5" cols="50" placeholder="Anything we should know — accessibility needs, language, questions…"></textarea>
+</p>
+<p>
+<input class="form-check-input me-2" type="checkbox" id="rules" name="rules" required>
+<label class="form-check-label me-3" for="rules">I agree to follow the museum rules.</label>
+</p>
+</fieldset>
+<div class="col-12 d-flex flex-wrap justify-content-center gap-3">
+<button class="btn btn-success btn-lg" type="submit">Submit request</button>
+<button class="btn btn-outline-secondary btn-lg" type="reset">Reset</button>
+<a class="btn btn-outline-secondary btn-lg disabled" href="#" role="button" aria-disabled="true" tabindex="-1">Sending is not available yet</a>
+</div>
+</form>
+</section>
+</article>
+</main>
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Military-Historical Museum</h2>
+<address>
+Armed Forces of the Republic of Kazakhstan<br>
+Republic Square area, Astana, Kazakhstan<br>
+Phone: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a> 
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Explore</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="about.html">About the Museum</a></li>
+<li><a class="link-light" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="history.html">Military History</a></li>
+<li><a class="link-light" href="visit.html">Plan a Visit</a></li>
+<li><a class="link-light" href="colophon.html">About the Project</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Good to know</h2>
+<p class="small">Opening hours and ticket prices differ between published sources. Please confirm them with the museum before you travel.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. An independent educational website — not the official website of the museum.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

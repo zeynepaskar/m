@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="History, mission, architecture and collection of the Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan.">
+<meta name="author" content="Askarova Zeinep">
+<title>About the Museum — Military-Historical Museum</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Skip to content</a></p>
+<nav class="bg-dark py-1 small" aria-label="Language">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light text-decoration-underline fw-bold" href="../en/about.html" hreflang="en" lang="en" aria-current="true">English</a>
+<a class="link-light" href="../ru/about.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light" href="../kk/about.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Main navigation">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</span><span class="d-md-none">Military-Historical Museum</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">About</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halls</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="dropdown-item" href="atrium.html">Atrium “Mangilik El”</a></li>
+<li><a class="dropdown-item" href="ancient.html">Antiquity – XIX Century</a></li>
+<li><a class="dropdown-item" href="20th.html">Military History of the XX Century</a></li>
+<li><a class="dropdown-item" href="modern.html">Armed Forces of Kazakhstan</a></li>
+<li><a class="dropdown-item" href="tank.html">History of Tank Troops</a></li>
+<li><a class="dropdown-item" href="weapons.html">Weapons of the XX–XXI Centuries</a></li>
+<li><a class="dropdown-item" href="formations.html">Military Formations and Units</a></li>
+<li><a class="dropdown-item" href="arts.html">Visual Arts</a></li>
+<li><a class="dropdown-item" href="temporary.html">Temporary Exhibitions</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Outdoor Military Equipment</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Plan a Visit</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Project</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">About the Museum</h1>
+<p>A state museum devoted to the military heritage of Kazakhstan — and much more than a row of showcases.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/entrance-banner.jpg"><img class="img-fluid rounded" src="../images/entrance-banner.jpg" alt="Blue banner above the museum entrance reading “Әскери-тарихи музей” and “Военно-исторический музей”" width="720" height="470"></a>
+<figcaption class="figure-caption">The bilingual banner above the entrance: Kazakh and Russian names of the museum.</figcaption>
+</figure>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">What is the museum?</h2>
+<p>The Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan is a specialised museum devoted to military heritage. Visit Astana describes it as a state museum opened in 2015 and notes that its exhibitions follow the chronology of Kazakhstan’s military history.</p>
+<p>The e-Museum description presents the institution as a scientific, educational and cultural centre whose work includes preservation of military heritage, research, museum education and patriotic education.</p>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Architecture and space</h2>
+<p>The museum occupies a large blue-and-white building that is part of a wider architectural complex. E-Museum dates the complex to 1998 and notes that, besides the exhibition halls, it contains a concert hall, a temporary-exhibitions hall and the Central Orchestra and Central Ensemble of the Ministry of Defence. A scale model in the museum shows the whole layout, dome included.</p>
+<p>The two dates are not a contradiction: the building was completed in 1998, while Visit Astana gives 2015 as the year the museum opened in its present form.</p>
+<!-- responsive grid: 2 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/model-building.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/model-building.jpg" alt="Scale model of the museum with a blue dome, lawns, and tiny tanks and aircraft" width="640" height="456" loading="lazy"></a>
+<figcaption class="figure-caption">A scale model of the museum complex and its grounds.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/facade-horsemen.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/facade-horsemen.jpg" alt="Museum façade seen from the plaza, with steps and bronze horsemen on either side of the entrance" width="640" height="419" loading="lazy"></a>
+<figcaption class="figure-caption">The museum façade from the plaza, with bronze horsemen beside the steps.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">The collection</h2>
+<p>The collection includes archaeological finds, weapons, military uniforms, documents, works of art and rare historical artifacts. Published figures differ, so both are shown here rather than choosing one:</p>
+<ul>
+<li><strong>10,000+</strong> — objects, according to e-Museum</li>
+<li><strong>≈20,000</strong> — objects, according to Visit Astana</li>
+</ul>
+<p>Whichever number is closer, the range is wide — from a single helmet on a pedestal to a parade car and missile launchers in the open air.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/objects-life-death-case.jpg"><img class="img-fluid rounded" src="../images/objects-life-death-case.jpg" alt="Display case with old equipment and archive photographs under the Kazakh heading “Objects between life and death”" width="640" height="478" loading="lazy"></a>
+<figcaption class="figure-caption">A display headed “Өмір мен өлім арасындағы заттар” — “Objects between life and death”.</figcaption>
+</figure>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">The museum as an educational space</h2>
+<p>Military history is broader than a list of battles. Academic research identifies five connected areas, and the halls give visitors a way into each of them.</p>
+<dl>
+<dt>History of wars</dt>
+<dd>Campaigns, battles and their consequences.</dd>
+<dt>Military art</dt>
+<dd>Strategy and tactics — how wars are planned and fought.</dd>
+<dt>Armed forces</dt>
+<dd>How military organisations are formed, staffed and developed.</dd>
+<dt>Military technology</dt>
+<dd>Weapons and equipment, from bows to armoured vehicles.</dd>
+<dt>Military thought</dt>
+<dd>The ideas and theories behind military decisions.</dd>
+</dl>
+<p>This approach is reflected in the museum’s halls: they let visitors study weapons, military organisation, historical events, visual art and the development of the Armed Forces of Kazakhstan.</p>
+<p><a href="exhibits.html">Continue to the exhibition halls</a></p>
+</section>
+</article>
+</main>
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Military-Historical Museum</h2>
+<address>
+Armed Forces of the Republic of Kazakhstan<br>
+Republic Square area, Astana, Kazakhstan<br>
+Phone: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a> 
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Explore</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="about.html">About the Museum</a></li>
+<li><a class="link-light" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="history.html">Military History</a></li>
+<li><a class="link-light" href="visit.html">Plan a Visit</a></li>
+<li><a class="link-light" href="colophon.html">About the Project</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Good to know</h2>
+<p class="small">Opening hours and ticket prices differ between published sources. Please confirm them with the museum before you travel.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. An independent educational website — not the official website of the museum.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Photographs of the halls and outdoor exhibition of the Military-Historical Museum in Astana.">
+<meta name="author" content="Askarova Zeinep">
+<title>Gallery — Military-Historical Museum</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Skip to content</a></p>
+<nav class="bg-dark py-1 small" aria-label="Language">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light text-decoration-underline fw-bold" href="../en/gallery.html" hreflang="en" lang="en" aria-current="true">English</a>
+<a class="link-light" href="../ru/gallery.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light" href="../kk/gallery.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Main navigation">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</span><span class="d-md-none">Military-Historical Museum</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halls</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="dropdown-item" href="atrium.html">Atrium “Mangilik El”</a></li>
+<li><a class="dropdown-item" href="ancient.html">Antiquity – XIX Century</a></li>
+<li><a class="dropdown-item" href="20th.html">Military History of the XX Century</a></li>
+<li><a class="dropdown-item" href="modern.html">Armed Forces of Kazakhstan</a></li>
+<li><a class="dropdown-item" href="tank.html">History of Tank Troops</a></li>
+<li><a class="dropdown-item" href="weapons.html">Weapons of the XX–XXI Centuries</a></li>
+<li><a class="dropdown-item" href="formations.html">Military Formations and Units</a></li>
+<li><a class="dropdown-item" href="arts.html">Visual Arts</a></li>
+<li><a class="dropdown-item" href="temporary.html">Temporary Exhibitions</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Outdoor Military Equipment</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Plan a Visit</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Project</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Gallery</h1>
+<p>Thirty-two photographs from the halls and the grounds, grouped by theme. Click any photo to open it full size.</p>
+<nav aria-label="Gallery themes">
+<ul>
+<li><a href="#building">Building (4)</a></li>
+<li><a href="#antiquity">Antiquity (7)</a></li>
+<li><a href="#xx">20th century (7)</a></li>
+<li><a href="#modern">Modern forces (7)</a></li>
+<li><a href="#tanks">Tanks & weapons (4)</a></li>
+<li><a href="#outdoors">Outdoors (3)</a></li>
+</ul>
+</nav>
+<section id="building" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Building</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/facade-horsemen.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/facade-horsemen.jpg" alt="Museum façade seen from the plaza, with steps and bronze horsemen on either side of the entrance" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">The museum façade from the plaza, with bronze horsemen beside the steps.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/entrance-banner.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/entrance-banner.jpg" alt="Blue banner above the museum entrance reading “Әскери-тарихи музей” and “Военно-исторический музей”" width="480" height="313" loading="lazy"></a>
+<figcaption class="figure-caption">The bilingual banner above the entrance: Kazakh and Russian names of the museum.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/model-building.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/model-building.jpg" alt="Scale model of the museum with a blue dome, lawns, and tiny tanks and aircraft" width="480" height="342" loading="lazy"></a>
+<figcaption class="figure-caption">A scale model of the museum complex and its grounds.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/atrium-mangilik-el.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/atrium-mangilik-el.jpg" alt="Atrium with the bronze “Mangilik El” monument: five soldiers around a map in a carved stone frame, with warrior figures on either side" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">The atrium: the bronze “Mangilik El” monument with warrior figures on either side.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="antiquity" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Antiquity</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warriors-red-column.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warriors-red-column.jpg" alt="Gallery with armoured warrior figures, one standing before a bright red column with a striped banner" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Armoured figures in the ancient-history gallery, one against a bright red column.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-warrior-spear.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-warrior-spear.jpg" alt="Warrior figure in scale armour with a long spear, a round shield with a golden winged creature, and bows" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Scale armour, a spear, bows and a shield decorated with a golden winged creature.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/warrior-shield-steppe.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/warrior-shield-steppe.jpg" alt="Warrior figure in colourful armour with a painted round shield, in front of a steppe-battle backdrop" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">A warrior with a painted round shield in front of a steppe-battle backdrop.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/helmet-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/helmet-case.jpg" alt="A single helmet on a white pedestal inside a glass case, with more displays behind" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">A single helmet on its own pedestal in the ancient-history gallery.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/horse-burial.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/horse-burial.jpg" alt="Horse skeleton laid out in a reconstructed burial pit behind glass" width="480" height="312" loading="lazy"></a>
+<figcaption class="figure-caption">A horse skeleton laid out in a reconstructed burial pit.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/steppe-firefight-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/steppe-firefight-diorama.jpg" alt="Diorama of defenders in traditional clothing firing long-barrelled guns from a rocky slope" width="480" height="319" loading="lazy"></a>
+<figcaption class="figure-caption">A diorama of defenders firing long-barrelled guns from a rocky slope.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/firearms-18-19c.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/firearms-18-19c.jpg" alt="Long-barrelled firearms and powder flasks in a pink-lit case under a Kazakh heading" width="480" height="321" loading="lazy"></a>
+<figcaption class="figure-caption">Firearms in a pink-lit case; the Kazakh heading refers to foreign arms of the 18th–19th centuries.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="xx" class="mb-5">
+<h2 class="h3 mt-4 mb-3">20th century</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/early-20th-rifle.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/early-20th-rifle.jpg" alt="Bolt-action rifle, revolver and bayonet on white display stands" width="480" height="324" loading="lazy"></a>
+<figcaption class="figure-caption">A rifle, a revolver and a bayonet from the early twentieth century.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-heroes-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-heroes-case.jpg" alt="Second World War display case with rows of soldiers’ portraits, rifles, a helmet and documents" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">Portraits, rifles, a helmet and documents in a Second World War case.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/wwii-diorama.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/wwii-diorama.jpg" alt="Diorama of a Second World War battle: soldiers raise a red banner beside a ruined glass dome and anti-aircraft guns" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">A diorama of a Second World War battle: soldiers raise a red banner beside a ruined glass dome.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/stalingrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/stalingrad-case.jpg" alt="Display titled “Stalingrad” with photographs, a map, helmets and field equipment behind glass" width="480" height="311" loading="lazy"></a>
+<figcaption class="figure-caption">The “Stalingrad” display: photographs, maps, helmets and personal belongings.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/leningrad-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/leningrad-case.jpg" alt="Display titled “Leningrad” with maps, photographs, weapons and a concert poster for Shostakovich’s Seventh Symphony" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">The “Leningrad” display, including a Shostakovich concert poster.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/objects-life-death-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/objects-life-death-case.jpg" alt="Display case with old equipment and archive photographs under the Kazakh heading “Objects between life and death”" width="480" height="358" loading="lazy"></a>
+<figcaption class="figure-caption">A display headed “Өмір мен өлім арасындағы заттар” — “Objects between life and death”.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/portrait-greatcoat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/portrait-greatcoat.jpg" alt="Framed oil painting of a soldier in a greatcoat and boots against a snowy background" width="480" height="476" loading="lazy"></a>
+<figcaption class="figure-caption">A framed painting of a soldier in a greatcoat.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="modern" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Modern forces</h2>
+<!-- responsive grid: 7 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-b.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-b.jpg" alt="Wide view of the reconstructed office with a wooden desk, green chairs, blue curtains and the Kazakh flag" width="480" height="318" loading="lazy"></a>
+<figcaption class="figure-caption">The same office from the other side: wooden desk, green chairs and blue curtains.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/officer-office-a.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/officer-office-a.jpg" alt="Reconstructed officer’s office: a uniformed figure at a wooden desk, with the national flag and state emblem behind" width="480" height="303" loading="lazy"></a>
+<figcaption class="figure-caption">A reconstructed officer’s office with the national flag and state emblem.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/un-flag-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/un-flag-case.jpg" alt="United Nations flag beside a wall display case with photographs, documents and insignia" width="480" height="422" loading="lazy"></a>
+<figcaption class="figure-caption">The United Nations flag beside a display of photographs and insignia.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/parade-car.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/parade-car.jpg" alt="Open parade car in front of screens showing black-and-white footage of military parades" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">An open parade car in front of screens showing archive footage.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/patrol-ship-model.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/patrol-ship-model.jpg" alt="Detailed model of a grey patrol ship in a glass case, with photographs of ships on the wall behind" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">A detailed patrol-ship model in the naval display.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/ship-console.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/ship-console.jpg" alt="Grey control console with dials, switches and a steering wheel" width="480" height="320" loading="lazy"></a>
+<figcaption class="figure-caption">A helm console with dials and a steering wheel, next to the ship models.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/cockpit-ejection-seat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/cockpit-ejection-seat.jpg" alt="Fighter cockpit marked 001 with a pilot figure in a flight suit and another on an ejection seat" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">A cockpit marked “001”, with pilot figures and an ejection seat.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="tanks" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Tanks & weapons</h2>
+<!-- responsive grid: 4 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/relief-map-tanks.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/relief-map-tanks.jpg" alt="Large relief map behind a red rope, with model tanks among painted battle lines and dates" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">A floor-level relief map with model tanks, ringed by a red rope.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/tank-cutaway.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/tank-cutaway.jpg" alt="Wall display of a tank drawn in cutaway, showing crew figures inside the hull" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">A cutaway tank on a wall display shows where the crew sits.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/machine-guns-case.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/machine-guns-case.jpg" alt="Glass case with machine guns, automatic rifles, a long anti-tank rifle and a shell, beside photographs of soldiers" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">Machine guns, automatic rifles and an anti-tank rifle in one case.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/field-gun.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/field-gun.jpg" alt="Black field gun on spoked wheels standing on a marble floor" width="480" height="317" loading="lazy"></a>
+<figcaption class="figure-caption">A field gun on spoked wheels, displayed on the marble floor.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="outdoors" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Outdoors</h2>
+<!-- responsive grid: 3 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/sam-launcher.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/sam-launcher.jpg" alt="Surface-to-air missile launcher with four missiles pointing into a cloudy sky" width="480" height="316" loading="lazy"></a>
+<figcaption class="figure-caption">A surface-to-air missile launcher in the outdoor display.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/coast-guard-boat.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/coast-guard-boat.jpg" alt="Turquoise and white Coast Guard boat number 607 on steel cradles, marked “Jagalay Küzeti”" width="480" height="315" loading="lazy"></a>
+<figcaption class="figure-caption">Coast Guard boat 607, marked “Jagalay Küzeti”, on steel cradles.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/armoured-vehicles.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/armoured-vehicles.jpg" alt="Armoured vehicles and tanks lined up on a paved plaza, with city buildings behind" width="480" height="258" loading="lazy"></a>
+<figcaption class="figure-caption">Armoured vehicles lined up on the paved plaza.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</article>
+</main>
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Military-Historical Museum</h2>
+<address>
+Armed Forces of the Republic of Kazakhstan<br>
+Republic Square area, Astana, Kazakhstan<br>
+Phone: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a> 
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Explore</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="about.html">About the Museum</a></li>
+<li><a class="link-light" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="history.html">Military History</a></li>
+<li><a class="link-light" href="visit.html">Plan a Visit</a></li>
+<li><a class="link-light" href="colophon.html">About the Project</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Good to know</h2>
+<p class="small">Opening hours and ticket prices differ between published sources. Please confirm them with the museum before you travel.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. An independent educational website — not the official website of the museum.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

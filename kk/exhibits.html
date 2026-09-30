@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі көрме залдарының каталогы және ұсынылатын келушілер бағыты.">
+<meta name="author" content="Askarova Zeinep">
+<title>Залдар мен экспозициялар — Әскери-тарихи музей</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Мазмұнға өту</a></p>
+<nav class="bg-dark py-1 small" aria-label="Тіл">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/exhibits.html" hreflang="en" lang="en">English</a>
+<a class="link-light" href="../ru/exhibits.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light text-decoration-underline fw-bold" href="../kk/exhibits.html" hreflang="kk" lang="kk" aria-current="true">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Негізгі навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі</span><span class="d-md-none">Әскери-тарихи музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Мәзірді ашу"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Басты бет</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">Музей туралы</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залдар</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item active" href="exhibits.html" aria-current="page">Залдар мен экспозициялар</a></li>
+<li><a class="dropdown-item" href="atrium.html">«Мәңгілік Ел» атриумы</a></li>
+<li><a class="dropdown-item" href="ancient.html">Көне заман – XIX ғасыр</a></li>
+<li><a class="dropdown-item" href="20th.html">XX ғасырдың әскери тарихы</a></li>
+<li><a class="dropdown-item" href="modern.html">Қазақстан Қарулы Күштері</a></li>
+<li><a class="dropdown-item" href="tank.html">Танк әскерлерінің тарихы</a></li>
+<li><a class="dropdown-item" href="weapons.html">XX–XXI ғасырлардың қару-жарағы</a></li>
+<li><a class="dropdown-item" href="formations.html">Әскери құрамалар мен бөлімдер</a></li>
+<li><a class="dropdown-item" href="arts.html">Бейнелеу өнері</a></li>
+<li><a class="dropdown-item" href="temporary.html">Уақытша көрмелер</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Ашық аспан астындағы әскери техника</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">Тарих</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Келу</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Жоба</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Залдар мен экспозициялар</h1>
+<p>Атриумнан ашық аспан астындағы павильонға дейін он аялдама. Бетін ашу үшін залды таңдаңыз.</p>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Музейді залдар бойынша аралау</h2>
+<p>Құрылым Visit Astana мен e-Museum жариялаған музей сипаттамаларына сүйенеді.</p>
+<!-- Bootstrap component: Alert — used for a note the visitor should not miss -->
+<aside class="alert alert-secondary border-start border-4 border-warning my-4">
+<p><strong>Неге жеті емес, он аялдама?</strong>
+Visit Astana жеті көрме залын және ашық аспан астындағы павильонды санайды. Бұл нұсқаулықта атриум, уақытша көрмелер залы және ашық алаң әрқайсысына жеке бет берілген, сондықтан көздердегі сандар әртүрлі.</p>
+</aside>
+<!-- Bootstrap component: Cards — used to present museum halls; I took the photo, title, text and link from my old article and turned the link into a button -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="atrium.html"><img class="card-img-top" src="../images/thumbs/atrium-mangilik-el.jpg" alt="«Мәңгілік Ел» қола ескерткіші бар атриум: оюлы тас жақтаудағы карта басындағы бес жауынгер, екі жағында жауынгер мүсіндері" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">1. «Мәңгілік Ел» атриумы</h3>
+<p class="card-text px-3 mt-2">Ғимараттың жүрегі: көне заман жауынгерлерін бүгінгі Қарулы Күштермен байланыстыратын қола ескерткіш.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="atrium.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="ancient.html"><img class="card-img-top" src="../images/thumbs/armoured-warrior-spear.jpg" alt="Қабыршақ сауыт киген, ұзын найзалы жауынгер мүсіні, алтын қанатты жаратылысы бар дөңгелек қалқан және садақтар" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">2. Көне заман – XIX ғасыр</h3>
+<p class="card-text px-3 mt-2">Даланың әскери әлемінен сауыт, садақ, дулыға және ат жерлеу орны.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="ancient.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="20th.html"><img class="card-img-top" src="../images/thumbs/stalingrad-case.jpg" alt="«Сталинград» экспозициясы: шыны артындағы фотосуреттер, карта, дулығалар және дала жабдығы" width="320" height="208" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">3. XX ғасырдың әскери тарихы</h3>
+<p class="card-text px-3 mt-2">Алаш кезеңі, Ұлы Отан соғысы және Ауғанстандағы соғыс.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="20th.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="modern.html"><img class="card-img-top" src="../images/thumbs/officer-office-b.jpg" alt="Қайта жасалған кабинеттің жалпы көрінісі: ағаш үстел, жасыл орындықтар, көк перделер және Қазақстан туы" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">4. Қазақстан Қарулы Күштері</h3>
+<p class="card-text px-3 mt-2">1992 жылы Қарулы Күштердің құрылуынан қазіргі құрлық, әуе қорғанысы және теңіз күштеріне дейін.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="modern.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="tank.html"><img class="card-img-top" src="../images/thumbs/relief-map-tanks.jpg" alt="Қызыл арқанмен қоршалған үлкен рельефті карта: шайқас сызықтары мен күндері арасындағы танк макеттері" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">5. Танк әскерлерінің тарихы</h3>
+<p class="card-text px-3 mt-2">Сауытты соғыс, рельефті шайқас картасы және интерактивті презентация.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="tank.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="weapons.html"><img class="card-img-top" src="../images/thumbs/machine-guns-case.jpg" alt="Пулеметтер, автоматтар, ұзын танкіге қарсы мылтық және снаряд қойылған шыны витрина, жанында сарбаздар фотосуреттері" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">6. XX–XXI ғасырлардың қару-жарағы</h3>
+<p class="card-text px-3 mt-2">Пулеметтер, танкіге қарсы қару, авиациялық жабдық және әскери техника макеттері.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="weapons.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="formations.html"><img class="card-img-top" src="../images/thumbs/wwii-heroes-case.jpg" alt="Екінші дүниежүзілік соғыс витринасы: сарбаздар портреттерінің қатарлары, винтовкалар, дулыға және құжаттар" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">7. Әскери құрамалар мен бөлімдер</h3>
+<p class="card-text px-3 mt-2">Қазақстанда дивизиялар мен бригадалар қалай құрылды және олардың тарихы қалай зерттеледі.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="formations.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="arts.html"><img class="card-img-top" src="../images/thumbs/portrait-greatcoat.jpg" alt="Жақтаудағы майлы бояумен салынған сурет: қарлы фондағы шинель мен етік киген сарбаз" width="320" height="317" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">8. Бейнелеу өнері</h3>
+<p class="card-text px-3 mt-2">Отанды қорғау тақырыбындағы кескіндеме, графика және мүсін.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="arts.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="temporary.html"><img class="card-img-top" src="../images/thumbs/entrance-banner.jpg" alt="Музей кіреберісінің үстіндегі көк баннер: «Әскери-тарихи музей» және «Военно-исторический музей»" width="320" height="209" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">9. Уақытша көрмелер</h3>
+<p class="card-text px-3 mt-2">Жеке залдағы арнайы жинақтардың өзгеріп тұратын бағдарламасы.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="temporary.html">Бетті ашу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="outdoor.html"><img class="card-img-top" src="../images/thumbs/sam-launcher.jpg" alt="Бұлтты аспанға бағытталған төрт зымыраны бар зениттік зымыран қондырғысы" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">10. Ашық аспан астындағы әскери техника</h3>
+<p class="card-text px-3 mt-2">Ашық аспан астында көрсетілген зымырандар, катерлер және сауытты техника.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="outdoor.html">Бетті ашу</a></p>
+</article>
+</div>
+</div>
+</section>
+<section class="mb-5">
+<!-- Bootstrap component: Table — striped and bordered; table-responsive lets it scroll inside its own box on a phone instead of widening the page -->
+<div class="table-responsive">
+<table class="table table-striped table-bordered align-middle">
+<caption>Негізгі көрме бағыттары</caption>
+<thead class="table-dark">
+<tr>
+<th scope="col">№</th>
+<th scope="col">Экспозиция</th>
+<th scope="col">Негізгі тақырып</th>
+<th scope="col">Бет</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>«Мәңгілік Ел» атриумы</td>
+<td>Тарихи сабақтастық және әскери мұра</td>
+<td><a href="atrium.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Көне заман – XIX ғасыр</td>
+<td>Көне қару-жарақ, археология және әскери дәстүрлер</td>
+<td><a href="ancient.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>XX ғасырдың әскери тарихы</td>
+<td>Алаш кезеңі, Екінші дүниежүзілік соғыс және Ауғанстан</td>
+<td><a href="20th.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>Қазақстан Қарулы Күштері</td>
+<td>Тәуелсіз Қазақстан Қарулы Күштерінің құрылуы мен дамуы</td>
+<td><a href="modern.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>Танк әскерлерінің тарихы</td>
+<td>Сауытты күштер мен танк ұрыстары</td>
+<td><a href="tank.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>XX–XXI ғасырлардың қару-жарағы</td>
+<td>Атыс қаруы, әскери техника және қару макеттері</td>
+<td><a href="weapons.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>Әскери құрамалар мен бөлімдер</td>
+<td>Әскери ұйымдар мен әскери құрамалар</td>
+<td><a href="formations.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>Бейнелеу өнері</td>
+<td>Кескіндеме, графика және мүсін</td>
+<td><a href="arts.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">9</th>
+<td>Уақытша көрмелер</td>
+<td>Ауыспалы көрмелер мен арнайы жинақтар</td>
+<td><a href="temporary.html">Залды ашу</a></td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>Ашық аспан астындағы әскери техника</td>
+<td>Ірі көлемді әскери техника</td>
+<td><a href="outdoor.html">Алаңды ашу</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Ұсынылатын келушілер бағыты</h2>
+<p>Залдар хронологиялық тәртіппен орналасқан, сондықтан ең қарапайым жоспар — оларды ретімен аралау.</p>
+<ol>
+<li><strong><a href="atrium.html">Кіреберіс пен атриумнан бастаңыз</a></strong><br>Күмбез астындағы «Мәңгілік Ел» ескерткішімен танысыңыз.</li>
+<li><strong><a href="ancient.html">Көне заманның әскери тарихымен танысыңыз</a></strong><br>Даладан табылған сауыт, садақ және ат жерлеу орны.</li>
+<li><strong><a href="20th.html">XX ғасырға өтіңіз</a></strong><br>Алаш, Ұлы Отан соғысы және Ауғанстан.</li>
+<li><strong><a href="modern.html">Тәуелсіз Қазақстанның Қарулы Күштері туралы біліңіз</a></strong><br>Құрлық әскерлері, әуе қорғанысы және әскери-теңіз күштері.</li>
+<li><strong><a href="tank.html">Танк және қару-жарақ көрмелерін аралаңыз</a></strong><br>Рельефті шайқас картасы, пулеметтер және дала зеңбірегі.</li>
+<li><strong><a href="arts.html">Бейнелеу өнері, уақытша көрмелер және техника алаңымен аяқтаңыз</a></strong><br>Содан кейін далаға шығып, зымырандарды, катерлерді және сауытты техниканы көріңіз.</li>
+</ol>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Әскери-тарихи музей</h2>
+<address>
+Қазақстан Республикасының Қарулы Күштері<br>
+Республика алаңы маңы, Астана, Қазақстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a> / <a class="link-light" href="tel:+77172919036">91-90-36</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Бөлімдер</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Басты бет</a></li>
+<li><a class="link-light" href="about.html">Музей туралы</a></li>
+<li><a class="link-light" href="exhibits.html">Залдар мен экспозициялар</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Әскери тарих</a></li>
+<li><a class="link-light" href="visit.html">Сапарды жоспарлау</a></li>
+<li><a class="link-light" href="colophon.html">Жоба туралы</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Білгеніңіз жөн</h2>
+<p class="small">Жұмыс уақыты мен билет бағасы әртүрлі көздерде әртүрлі. Сапарға шығар алдында оларды музейден нақтылаңыз.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Тәуелсіз оқу сайты — музейдің ресми сайты емес.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

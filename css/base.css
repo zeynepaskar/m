@@ -1,0 +1,54 @@
+/* Correction layer on top of Bootstrap 5.3.3. Bootstrap does layout, spacing, navbar, buttons and responsiveness;
+   this file only sets the museum's colours, fonts and a few details Bootstrap does not cover.
+   PALETTE (5 colours):
+   #3b4a2f dark olive - military heritage, calm and official; navbar, footer, buttons
+   #f4efe6 sand       - warm paper background, easier to read than pure white
+   #b08d3c gold       - small accents only (borders, hover), like bronze on the museum facade
+   #222222 ink        - body text with strong contrast
+   white              - text on olive and card backgrounds */
+:root {
+  --museum-olive: #3b4a2f;
+  --museum-gold: #b08d3c;
+  --bs-body-bg: #f4efe6;
+  --bs-body-color: #222222;
+  --bs-body-line-height: 1.7;
+  --bs-link-color-rgb: 59, 74, 47;      /* links: olive instead of Bootstrap blue */
+  --bs-link-hover-color-rgb: 176, 141, 60;
+}
+
+/* Fonts: Georgia for headings (monument feel), Bootstrap's system stack stays for body text */
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  letter-spacing: 0.01em;
+}
+h1, h2, h3 { color: var(--museum-olive); }
+
+/* brand colour used with Bootstrap classes: <nav class="bg-museum"> and <footer class="bg-museum"> */
+.bg-museum { background-color: var(--museum-olive); }
+.navbar { border-bottom: 4px solid var(--museum-gold); }
+
+/* Bootstrap's success button is bright green; these variables (Bootstrap's own hooks) make it olive */
+.btn-success {
+  --bs-btn-bg: var(--museum-olive);
+  --bs-btn-border-color: var(--museum-olive);
+  --bs-btn-hover-bg: #2c3823;
+  --bs-btn-hover-border-color: #2c3823;
+  --bs-btn-active-bg: #2c3823;
+  --bs-btn-active-border-color: #2c3823;
+}
+.btn-outline-success {
+  --bs-btn-color: var(--museum-olive);
+  --bs-btn-border-color: var(--museum-olive);
+  --bs-btn-hover-bg: var(--museum-olive);
+  --bs-btn-hover-border-color: var(--museum-olive);
+  --bs-btn-active-bg: var(--museum-olive);
+  --bs-btn-active-border-color: var(--museum-olive);
+}
+
+/* details Bootstrap does not have */
+.card { transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { border-color: var(--museum-gold); transform: translateY(-2px); }
+.card-img-top { height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.breadcrumb, .figure-caption { font-size: 0.9rem; }
+blockquote { border-left: 4px solid var(--museum-gold); padding-left: 1rem; }
+mark { background-color: #ecd9a4; }

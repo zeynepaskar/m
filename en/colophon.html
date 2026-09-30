@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sources and technical information for the Military-Historical Museum student website.">
+<meta name="author" content="Askarova Zeinep">
+<title>About the Project — Military-Historical Museum</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Skip to content</a></p>
+<nav class="bg-dark py-1 small" aria-label="Language">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light text-decoration-underline fw-bold" href="../en/colophon.html" hreflang="en" lang="en" aria-current="true">English</a>
+<a class="link-light" href="../ru/colophon.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light" href="../kk/colophon.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Main navigation">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</span><span class="d-md-none">Military-Historical Museum</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halls</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="dropdown-item" href="atrium.html">Atrium “Mangilik El”</a></li>
+<li><a class="dropdown-item" href="ancient.html">Antiquity – XIX Century</a></li>
+<li><a class="dropdown-item" href="20th.html">Military History of the XX Century</a></li>
+<li><a class="dropdown-item" href="modern.html">Armed Forces of Kazakhstan</a></li>
+<li><a class="dropdown-item" href="tank.html">History of Tank Troops</a></li>
+<li><a class="dropdown-item" href="weapons.html">Weapons of the XX–XXI Centuries</a></li>
+<li><a class="dropdown-item" href="formations.html">Military Formations and Units</a></li>
+<li><a class="dropdown-item" href="arts.html">Visual Arts</a></li>
+<li><a class="dropdown-item" href="temporary.html">Temporary Exhibitions</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Outdoor Military Equipment</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Plan a Visit</a></li>
+<li class="nav-item"><a class="nav-link active" href="colophon.html" aria-current="page">Project</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">About the Project</h1>
+<p>Who made this website, what it is based on, and how it is built.</p>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">An independent educational project</h2>
+<p>This website is a student project created by Askarova Zeinep for an introductory web technologies course. It is built around a real cultural institution — the Military-Historical Museum in Astana — and is <strong>not the museum’s official website</strong>.</p>
+<p>The text draws on the public sources listed on this page. Where they disagree — opening hours, ticket prices, the number of objects, the number of halls — the differences are shown openly instead of being hidden.</p>
+<p>The Russian and Kazakh versions are translations of the English text; the Kazakh and Russian names of the museum are those shown on its entrance banner.</p>
+<h2 class="h3 mt-4 mb-3">How it is built</h2>
+<ul>
+<li>Semantic HTML5: header, nav, main, section, article, aside, figure, table, form and footer.</li>
+<li>Plain HTML only — no CSS and no JavaScript — so the pages use the browser’s default styles.</li>
+<li>Three language versions live in the folders en/, ru/ and kk/; every page links to its twin in the other two languages.</li>
+<li>Photographs are compressed JPEGs with descriptive file names and alternative text in each language.</li>
+</ul>
+<h3>Project structure</h3>
+<pre class="overflow-auto p-3 bg-white border rounded">en/  ru/  kk/   (same 17 pages in each language)
+   index.html  about.html  exhibits.html  gallery.html
+   history.html  visit.html  colophon.html
+   atrium.html  ancient.html  20th.html  modern.html  tank.html
+   weapons.html  formations.html  arts.html  temporary.html  outdoor.html
+images/          (32 photographs)
+   thumbs/       (small copies for the cards)
+index.html       (language chooser)</pre>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Sources</h2>
+<ol>
+<li><a href="https://e-museum.kz/museum/68da379da9894247d-kk/" target="_blank" rel="noopener noreferrer">e-Museum — Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</a></li>
+<li><a href="https://visitastana.kz/ru/about-city/what-to-see/voenno-istoricheskiy-muzey-vooruzhennykh-sil-respubliki-kazakhstan/" target="_blank" rel="noopener noreferrer">Visit Astana — Military-Historical Museum</a></li>
+<li><a href="https://orda.kz/mnogo-oruzhija-i-nemnogo-prividenij-kakie-tajny-hranit-voenno-istoricheskij-muzej-v-astane-401397/" target="_blank" rel="noopener noreferrer">Orda.kz — Museum overview and exhibition report</a></li>
+<li>Muhamedzhanova, S. Sh. “Development of military history and military-historical education in Kazakhstan”, 2017.</li>
+<li>Akkuzinov, A. K. “Military units from Kazakhstan at the first stage of the Great Patriotic War”, 2024.</li>
+<li>Korusenko, S. N. “Historical memory of the Great Patriotic War in the Republic of Kazakhstan: modern trends”, 2025.</li>
+</ol>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Military-Historical Museum</h2>
+<address>
+Armed Forces of the Republic of Kazakhstan<br>
+Republic Square area, Astana, Kazakhstan<br>
+Phone: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Explore</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="about.html">About the Museum</a></li>
+<li><a class="link-light" href="exhibits.html">Halls & Exhibitions</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="history.html">Military History</a></li>
+<li><a class="link-light" href="visit.html">Plan a Visit</a></li>
+<li><a class="link-light" href="colophon.html">About the Project</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Good to know</h2>
+<p class="small">Opening hours and ticket prices differ between published sources. Please confirm them with the museum before you travel.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. An independent educational website — not the official website of the museum.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

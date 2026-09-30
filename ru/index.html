@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Учебный сайт о Военно-историческом музее Вооружённых Сил Республики Казахстан в Астане: залы, фотографии и информация для посетителей.">
+<meta name="author" content="Askarova Zeinep">
+<title>Военно-исторический музей Вооружённых Сил Республики Казахстан — Астана</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Перейти к содержимому</a></p>
+<nav class="bg-dark py-1 small" aria-label="Язык">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/index.html" hreflang="en" lang="en">English</a>
+<a class="link-light text-decoration-underline fw-bold" href="../ru/index.html" hreflang="ru" lang="ru" aria-current="true">Русский</a>
+<a class="link-light" href="../kk/index.html" hreflang="kk" lang="kk">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Основная навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Военно-исторический музей Вооружённых Сил Республики Казахстан</span><span class="d-md-none">Военно-исторический музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">О музее</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залы</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="dropdown-item" href="atrium.html">Атриум «Мәңгілік Ел»</a></li>
+<li><a class="dropdown-item" href="ancient.html">Древность – XIX век</a></li>
+<li><a class="dropdown-item" href="20th.html">Военная история XX века</a></li>
+<li><a class="dropdown-item" href="modern.html">Вооружённые Силы Казахстана</a></li>
+<li><a class="dropdown-item" href="tank.html">История танковых войск</a></li>
+<li><a class="dropdown-item" href="weapons.html">Оружие XX–XXI веков</a></li>
+<li><a class="dropdown-item" href="formations.html">Воинские формирования и части</a></li>
+<li><a class="dropdown-item" href="arts.html">Изобразительное искусство</a></li>
+<li><a class="dropdown-item" href="temporary.html">Временные выставки</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Военная техника под открытым небом</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">История</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Посещение</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<div class="row align-items-center g-4 mb-5">
+<div class="col-12 col-lg-6 text-center text-lg-start">
+<h1 class="display-5 mb-3">Военно-исторический музей Вооружённых Сил Республики Казахстан</h1>
+<p class="lead">От степных воинов древности до вооружённых сил независимой страны — пройдите по военной истории Казахстана зал за залом.</p>
+<!-- nested grid: a row inside a column, so the three links become buttons that stack on phones and sit in one line from sm up -->
+<ul class="row g-2 list-unstyled justify-content-center justify-content-lg-start">
+<li class="col-12 col-sm-auto"><a class="btn btn-success btn-lg d-block" href="exhibits.html">Осмотреть залы</a></li>
+<li class="col-12 col-sm-auto"><a class="btn btn-outline-success btn-lg d-block" href="gallery.html">Смотреть фотогалерею</a></li>
+<li class="col-12 col-sm-auto"><a class="btn btn-outline-secondary btn-lg d-block" href="visit.html">Спланировать визит</a></li>
+</ul>
+</div>
+<div class="col-12 col-lg-6">
+<figure class="figure w-100 text-center my-4">
+<a href="../images/facade-horsemen.jpg"><img class="img-fluid rounded" src="../images/facade-horsemen.jpg" alt="Фасад музея со стороны площади: лестница и бронзовые всадники по обе стороны от входа" width="900" height="590"></a>
+<figcaption class="figure-caption d-none d-md-block">Фасад музея со стороны площади, бронзовые всадники у лестницы.</figcaption>
+</figure>
+</div>
+</div>
+
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Музей в цифрах</h2>
+<ul>
+<li><strong>7</strong> — выставочных залов</li>
+<li><strong>≈20,000</strong> — предметов (оценка Visit Astana)</li>
+<li><strong>10</strong> — остановок в маршруте посетителя</li>
+<li><strong>1998</strong> — год постройки здания музейного комплекса</li>
+</ul>
+</section>
+
+<section id="halls" class="mb-5">
+<h2 class="h3 mt-4 mb-3">Пройдите по истории</h2>
+<p>Экспозиция построена в хронологическом порядке. Начните под куполом атриума, пройдите путь от древности до независимости и завершите осмотр среди техники под открытым небом.</p>
+<!-- Bootstrap component: Cards — used to present museum halls; I took the photo, title, text and link from my old article and turned the link into a button -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="atrium.html"><img class="card-img-top" src="../images/thumbs/atrium-mangilik-el.jpg" alt="Атриум с бронзовым монументом «Мәңгілік Ел»: пять воинов вокруг карты в резной каменной раме, по бокам фигуры воинов" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">1. Атриум «Мәңгілік Ел»</h3>
+<p class="card-text px-3 mt-2">Сердце здания: бронзовый монумент, связывающий воинов древности с сегодняшними вооружёнными силами.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="atrium.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="ancient.html"><img class="card-img-top" src="../images/thumbs/armoured-warrior-spear.jpg" alt="Фигура воина в пластинчатых доспехах с длинным копьём, круглый щит с золотым крылатым существом и луки" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">2. Древность – XIX век</h3>
+<p class="card-text px-3 mt-2">Доспехи, луки, шлемы и погребение коня из военного мира степи.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="ancient.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="20th.html"><img class="card-img-top" src="../images/thumbs/stalingrad-case.jpg" alt="Экспозиция «Сталинград»: фотографии, карта, каски и полевое снаряжение за стеклом" width="320" height="208" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">3. Военная история XX века</h3>
+<p class="card-text px-3 mt-2">Алашский период, Великая Отечественная война и война в Афганистане.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="20th.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="modern.html"><img class="card-img-top" src="../images/thumbs/officer-office-b.jpg" alt="Общий вид реконструированного кабинета: деревянный стол, зелёные стулья, синие шторы и флаг Казахстана" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">4. Вооружённые Силы Казахстана</h3>
+<p class="card-text px-3 mt-2">От создания вооружённых сил в 1992 году до современных сухопутных, противовоздушных и военно-морских сил.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="modern.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="tank.html"><img class="card-img-top" src="../images/thumbs/relief-map-tanks.jpg" alt="Большая рельефная карта за красным канатом: модели танков среди нарисованных линий боя и дат" width="320" height="212" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">5. История танковых войск</h3>
+<p class="card-text px-3 mt-2">Бронетанковая война, рельефная карта сражения и интерактивная презентация.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="tank.html">Открыть страницу</a></p>
+</article>
+</div>
+<div class="col">
+<article class="card h-100 shadow-sm">
+<a href="outdoor.html"><img class="card-img-top" src="../images/thumbs/sam-launcher.jpg" alt="Зенитная ракетная установка с четырьмя ракетами, направленными в облачное небо" width="320" height="210" loading="lazy"></a>
+<h3 class="card-title h5 px-3 pt-3 mb-0">10. Военная техника под открытым небом</h3>
+<p class="card-text px-3 mt-2">Ракеты, катера и бронетехника под открытым небом.</p>
+<p class="px-3 pb-3 mt-auto mb-0"><a class="btn btn-outline-success btn-sm" href="outdoor.html">Открыть страницу</a></p>
+</article>
+</div>
+</div>
+<p><a href="exhibits.html">Все десять остановок и маршрут посетителя</a></p>
+</section>
+
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Больше, чем музей</h2>
+<p>Военно-исторический музей входит в состав Национального военно-патриотического центра Вооружённых Сил. Здание музея — это не только экспозиции: в нём также находятся концертный зал, зал временных выставок, а также размещаются Центральный военный оркестр и Центральный ансамбль Министерства обороны.</p>
+<p>Музей определяет свою работу как сохранение военного наследия, научные исследования, музейное образование и патриотическое воспитание. Экспозиции представляют военную историю от древности до современности через археологические предметы, оружие, документы, форму, произведения искусства и военную технику.</p>
+<p><a href="about.html">Подробнее о музее</a></p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/model-building.jpg"><img class="img-fluid rounded" src="../images/model-building.jpg" alt="Макет музея с синим куполом, газонами и крошечными танками и самолётами" width="640" height="456" loading="lazy"></a>
+<figcaption class="figure-caption">Макет музейного комплекса и прилегающей территории.</figcaption>
+</figure>
+<!-- Bootstrap component: Alert — used for the short "at a glance" note; I changed its colour and added a gold left border -->
+<aside class="alert alert-secondary border-start border-4 border-warning my-4">
+<h3 class="h5 alert-heading">Коротко о главном</h3>
+<ul>
+<li>Расположение: Астана, район площади Республики</li>
+<li>Открыт как музей: 2015 год по данным Visit Astana; здание комплекса построено в 1998 году</li>
+<li>Структура: семь основных выставочных залов и площадка военной техники под открытым небом</li>
+<li>Коллекция: тысячи предметов — оценки в разных источниках различаются</li>
+</ul>
+</aside>
+</section>
+
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Внутри коллекции</h2>
+<p>Несколько вещей, которые встретятся на пути. Нажмите на фото, чтобы открыть его крупнее.</p>
+<p>
+<a href="../images/wwii-diorama.jpg"><img class="img-fluid rounded" src="../images/thumbs/wwii-diorama.jpg" alt="Диорама сражения Второй мировой войны: солдаты поднимают красное знамя рядом с разрушенным стеклянным куполом и зенитными орудиями" width="320" height="210" loading="lazy"></a>
+<a href="../images/armoured-warrior-spear.jpg"><img class="img-fluid rounded" src="../images/thumbs/armoured-warrior-spear.jpg" alt="Фигура воина в пластинчатых доспехах с длинным копьём, круглый щит с золотым крылатым существом и луки" width="320" height="210" loading="lazy"></a>
+<a href="../images/cockpit-ejection-seat.jpg"><img class="img-fluid rounded" src="../images/thumbs/cockpit-ejection-seat.jpg" alt="Кабина истребителя с отметкой 001, фигура лётчика в лётном костюме и другая — на катапультном кресле" width="320" height="211" loading="lazy"></a>
+<a href="../images/horse-burial.jpg"><img class="img-fluid rounded" src="../images/thumbs/horse-burial.jpg" alt="Скелет коня в реконструированной погребальной яме за стеклом" width="320" height="208" loading="lazy"></a>
+<a href="../images/parade-car.jpg"><img class="img-fluid rounded" src="../images/thumbs/parade-car.jpg" alt="Открытый парадный автомобиль перед экранами с чёрно-белыми кадрами военных парадов" width="320" height="212" loading="lazy"></a>
+<a href="../images/coast-guard-boat.jpg"><img class="img-fluid rounded" src="../images/thumbs/coast-guard-boat.jpg" alt="Бирюзово-белый катер береговой охраны № 607 на стальных опорах с надписью «Jagalay Küzeti»" width="320" height="210" loading="lazy"></a>
+</p>
+<p><a href="gallery.html">Открыть всю галерею — 32 фото</a></p>
+</section>
+
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Почему этот музей важен</h2>
+<p>Музей объединяет сохранение наследия, исследования и образование. Научная работа 2025 года описывает Военно-исторический музей в Астане как специализированный музей, представляющий память о Великой Отечественной войне и более широкую военную историю Казахстана.</p>
+<p>Коллекцию можно изучать не только как набор предметов, но и как способ проследить изменения в военной организации, вооружении, военном искусстве и исторической памяти.</p>
+</section>
+
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Хотите посетить музей?</h2>
+<p>Адрес, телефоны, а также различающиеся часы работы и цены на билеты по данным разных источников — на странице планирования визита.</p>
+<p><a href="visit.html">Спланировать визит</a></p>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Военно-исторический музей</h2>
+<address>
+Вооружённые Силы Республики Казахстан<br>
+Район площади Республики, Астана, Казахстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Разделы</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Главная</a></li>
+<li><a class="link-light" href="about.html">О музее</a></li>
+<li><a class="link-light" href="exhibits.html">Залы и экспозиции</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Военная история</a></li>
+<li><a class="link-light" href="visit.html">Планирование визита</a></li>
+<li><a class="link-light" href="colophon.html">О проекте</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Важно знать</h2>
+<p class="small">Часы работы и цены на билеты в разных источниках различаются. Пожалуйста, уточните их в музее перед поездкой.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Независимый учебный сайт — не официальный сайт музея.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

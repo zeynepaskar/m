@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- Askarova Zeinep -->
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейінің тарихы, миссиясы, сәулеті және жинағы.">
+<meta name="author" content="Askarova Zeinep">
+<title>Музей туралы — Әскери-тарихи музей</title>
+<!-- Bootstrap version: 5.3.3 (CDN). Bootstrap is linked first and my own css/base.css second, so my corrections win where they conflict -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+<header>
+<p class="m-0"><a class="visually-hidden-focusable" href="#main">Мазмұнға өту</a></p>
+<nav class="bg-dark py-1 small" aria-label="Тіл">
+<!-- Why: the language switcher is its own nav, so a screen reader announces it separately from the site menu -->
+<div class="container-fluid d-flex justify-content-end gap-3">
+<a class="link-light" href="../en/about.html" hreflang="en" lang="en">English</a>
+<a class="link-light" href="../ru/about.html" hreflang="ru" lang="ru">Русский</a>
+<a class="link-light text-decoration-underline fw-bold" href="../kk/about.html" hreflang="kk" lang="kk" aria-current="true">Қазақша</a>
+</div>
+</nav>
+<!-- Bootstrap component: Navbar — used for the main menu; it collapses behind a toggler below the lg breakpoint (992px) and the hall list became a dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-museum" aria-label="Негізгі навигация">
+<!-- container-fluid: the navbar spans the full window width; the page content below uses the fixed-width container instead -->
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">
+<!-- span: no semantic tag exists for "show this text only on some screen sizes"; the short name is shown on phones, the full name from md up -->
+<span class="d-none d-md-inline">Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі</span><span class="d-md-none">Әскери-тарихи музей</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Мәзірді ашу"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Басты бет</a></li>
+<li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">Музей туралы</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Залдар</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="exhibits.html">Залдар мен экспозициялар</a></li>
+<li><a class="dropdown-item" href="atrium.html">«Мәңгілік Ел» атриумы</a></li>
+<li><a class="dropdown-item" href="ancient.html">Көне заман – XIX ғасыр</a></li>
+<li><a class="dropdown-item" href="20th.html">XX ғасырдың әскери тарихы</a></li>
+<li><a class="dropdown-item" href="modern.html">Қазақстан Қарулы Күштері</a></li>
+<li><a class="dropdown-item" href="tank.html">Танк әскерлерінің тарихы</a></li>
+<li><a class="dropdown-item" href="weapons.html">XX–XXI ғасырлардың қару-жарағы</a></li>
+<li><a class="dropdown-item" href="formations.html">Әскери құрамалар мен бөлімдер</a></li>
+<li><a class="dropdown-item" href="arts.html">Бейнелеу өнері</a></li>
+<li><a class="dropdown-item" href="temporary.html">Уақытша көрмелер</a></li>
+<li><a class="dropdown-item" href="outdoor.html">Ашық аспан астындағы әскери техника</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="history.html">Тарих</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Келу</a></li>
+<li class="nav-item"><a class="nav-link" href="colophon.html">Жоба</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- container: a centred column with a fixed max-width for each breakpoint keeps text lines readable; container-fluid is used in the navbar, where full width is wanted -->
+<main id="main" class="container py-4 py-lg-5">
+<article>
+<h1 class="display-5 mb-3">Музей туралы</h1>
+<p>Қазақстанның әскери мұрасына арналған мемлекеттік музей — жай витриналар қатарынан әлдеқайда көп нәрсе.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/entrance-banner.jpg"><img class="img-fluid rounded" src="../images/entrance-banner.jpg" alt="Музей кіреберісінің үстіндегі көк баннер: «Әскери-тарихи музей» және «Военно-исторический музей»" width="720" height="470"></a>
+<figcaption class="figure-caption">Кіреберіс үстіндегі қостілді баннер: музейдің қазақша және орысша атауы.</figcaption>
+</figure>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Музей деген не?</h2>
+<p>Қазақстан Республикасы Қарулы Күштерінің Әскери-тарихи музейі — әскери мұраға арналған мамандандырылған музей. Visit Astana оны 2015 жылы ашылған мемлекеттік музей деп сипаттайды және экспозициялары Қазақстанның әскери тарихының хронологиясын ұстанатынын атап өтеді.</p>
+<p>e-Museum сипаттамасы мекемені ғылыми, білім беру және мәдени орталық ретінде таныстырады: оның жұмысына әскери мұраны сақтау, зерттеу, музейлік білім беру және патриоттық тәрбие кіреді.</p>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Сәулет және кеңістік</h2>
+<p>Музей үлкен көк-ақ ғимаратты алып тұр, ол кеңірек сәулет кешенінің бір бөлігі. E-Museum кешенді 1998 жылға жатқызады және көрме залдарынан бөлек онда концерт залы, уақытша көрмелер залы, сондай-ақ Қорғаныс министрлігінің Орталық оркестрі мен Орталық ансамблі бар екенін атап өтеді. Музейдегі макет күмбезін қоса, бүкіл жоспарды көрсетеді.</p>
+<p>Екі күн бір-біріне қайшы емес: ғимарат 1998 жылы салынған, ал Visit Astana музейдің қазіргі түрінде ашылған жылы ретінде 2015 жылды атайды.</p>
+<!-- responsive grid: 2 photos, 1 column on phones, more on wider screens -->
+<div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/model-building.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/model-building.jpg" alt="Көк күмбезді музей макеті: айналасында көгал, кішкентай танктер мен ұшақтар" width="640" height="456" loading="lazy"></a>
+<figcaption class="figure-caption">Музей кешені мен оның аумағының макеті.</figcaption>
+</figure>
+</div>
+<div class="col">
+<figure class="figure m-0">
+<a href="../images/facade-horsemen.jpg"><img class="figure-img img-fluid rounded shadow-sm" src="../images/facade-horsemen.jpg" alt="Алаңнан көрінетін музей қасбеті: баспалдақ және кіреберістің екі жағындағы қола шабандоздар" width="640" height="419" loading="lazy"></a>
+<figcaption class="figure-caption">Алаңнан көрінетін музей қасбеті, баспалдақ жанындағы қола шабандоздар.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Жинақ</h2>
+<p>Жинаққа археологиялық олжалар, қару-жарақ, әскери киім, құжаттар, өнер туындылары және сирек тарихи артефактілер кіреді. Жарияланған сандар әртүрлі, сондықтан біреуін таңдамай, екеуі де көрсетілген:</p>
+<ul>
+<li><strong>10,000+</strong> — экспонат, e-Museum деректері бойынша</li>
+<li><strong>≈20,000</strong> — экспонат, Visit Astana деректері бойынша</li>
+</ul>
+<p>Қай сан шындыққа жақын болса да, ауқым кең — тұғырдағы жалғыз дулығадан бастап шеру автомобиліне және ашық аспан астындағы зымыран қондырғыларына дейін.</p>
+<figure class="figure w-100 text-center my-4">
+<a href="../images/objects-life-death-case.jpg"><img class="img-fluid rounded" src="../images/objects-life-death-case.jpg" alt="«Өмір мен өлім арасындағы заттар» деген тақырыпшасы бар витрина: ескі жабдық және мұрағат фотосуреттері" width="640" height="478" loading="lazy"></a>
+<figcaption class="figure-caption">«Өмір мен өлім арасындағы заттар» тақырыбындағы витрина.</figcaption>
+</figure>
+</section>
+<section class="mb-5">
+<h2 class="h3 mt-4 mb-3">Музей — білім беру кеңістігі</h2>
+<p>Әскери тарих шайқастар тізімінен кеңірек. Ғылыми зерттеулер бес өзара байланысты саланы бөледі, ал музей залдары келушілерге әрқайсысына жол ашады.</p>
+<dl>
+<dt>Соғыстар тарихы</dt>
+<dd>Жорықтар, шайқастар және олардың салдары.</dd>
+<dt>Әскери өнер</dt>
+<dd>Стратегия мен тактика — соғыс қалай жоспарланып, жүргізіледі.</dd>
+<dt>Қарулы күштер</dt>
+<dd>Әскери ұйымдар қалай құрылады, жасақталады және дамиды.</dd>
+<dt>Әскери техника</dt>
+<dd>Қару-жарақ пен жабдық — садақтан сауытты техникаға дейін.</dd>
+<dt>Әскери ой</dt>
+<dd>Әскери шешімдердің негізіндегі идеялар мен теориялар.</dd>
+</dl>
+<p>Бұл тәсіл музей залдарында көрініс тапқан: олар қару-жарақты, әскери ұйымды, тарихи оқиғаларды, бейнелеу өнерін және Қазақстан Қарулы Күштерінің дамуын зерттеуге мүмкіндік береді.</p>
+<p><a href="exhibits.html">Көрме залдарына өту</a></p>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="bg-museum text-white mt-5 py-4">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-4">
+<h2 class="h5">Әскери-тарихи музей</h2>
+<address>
+Қазақстан Республикасының Қарулы Күштері<br>
+Республика алаңы маңы, Астана, Қазақстан<br>
+Телефон: <a class="link-light" href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Бөлімдер</h2>
+<ul class="list-unstyled">
+<li><a class="link-light" href="index.html">Басты бет</a></li>
+<li><a class="link-light" href="about.html">Музей туралы</a></li>
+<li><a class="link-light" href="exhibits.html">Залдар мен экспозициялар</a></li>
+<li><a class="link-light" href="gallery.html">Галерея</a></li>
+<li><a class="link-light" href="history.html">Әскери тарих</a></li>
+<li><a class="link-light" href="visit.html">Сапарды жоспарлау</a></li>
+<li><a class="link-light" href="colophon.html">Жоба туралы</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h2 class="h5">Білгеніңіз жөн</h2>
+<p class="small">Жұмыс уақыты мен билет бағасы әртүрлі көздерде әртүрлі. Сапарға шығар алдында оларды музейден нақтылаңыз.</p>
+</div>
+<div class="col-12 border-top border-secondary pt-3">
+<p class="mb-0"><small>&copy; 2026 Askarova Zeinep. Тәуелсіз оқу сайты — музейдің ресми сайты емес.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap 5.3.3 JavaScript bundle: needed only for the navbar toggler and the dropdown; I wrote no JavaScript of my own -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
